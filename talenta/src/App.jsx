@@ -11,7 +11,6 @@ import { PDFTable } from "./PDFDownloader";
 function App() {
   const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
 
-  console.log(state.users);
   const toggleModal = () => {
     dispatch({ type: "MODAL_HIT" });
   };
@@ -94,7 +93,6 @@ function App() {
         </div>
         <PieChart users={state.users} />
       </div>
-      <PDFTable users={state.users} />
     </>
   );
 }

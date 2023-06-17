@@ -3,7 +3,7 @@ import { Document, Page, Text, View, StyleSheet } from "@react-pdf/renderer";
 export function PDFTable({ users }) {
   const styles = StyleSheet.create({
     page: {
-      flexDirection: "row",
+      flexDirection: "column",
       backgroundColor: "#3a7ba1",
     },
     section: {
